@@ -1,0 +1,139 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: rgb(99 89 75);
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    position: relative;
+    color: darkred;
+    left: 15%;
+    top: 20px;
+    width: fit-content;
+    margin: 0;
+}
+#div{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(250 235 215 / 78%);
+    z-index: 2;
+    height: 80px;
+}
+.span{
+    display: block;
+    background-color: darkred;
+    width: 30px;
+    height: 5px;
+    margin: 0 0 2px 0;
+    border-radius: 2em;
+    cursor: pointer;
+}
+#span{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: none;
+}
+#span:hover #dropdown{
+    display: block !important;
+}
+#dropdown{
+    background-color: black;
+    display: none;
+}
+#dropdown ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#dropdown ul li{
+    font-size: 1.5em;
+    border-bottom: solid 2px gray;
+    text-align: center;
+    padding: 5px;
+}
+#dropdown ul li:hover{
+    background-color: darkred;
+}
+#dropdown ul li:hover a{
+    color: black !important;
+}
+#dropdown a{
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+#int{
+    font-weight: normal;
+    font-size: medium;
+    margin-top: 0;
+}
+#nav-bar{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-right: 10%;
+    top: 25px;
+    right: 10px;
+    font-size: 25px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: bold;
+}
+#intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(99 89 75);
+    background-image: url("../Images/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+}
+#intro1{
+    background-color: blue;
+    width: 75%;
+    height: 75%;
+    position: relative;
+    top: 25%;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px),
+handheld and (max-width: 800px),
+screen and (max-device-width: 800px){
+    #div{
+       text-align: center;
+        height: fit-content;
+    }
+    #span{
+        display: block;
+    }
+    #head{
+        position: unset;
+        margin: 15px auto 15px auto;
+        }
+    #nav-bar{
+        display: none;
+        margin: auto;
+        top: auto;
+        width: 300px;
+        position: unset;
+        font-size: unset;
+    }
+}

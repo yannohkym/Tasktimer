@@ -1,0 +1,41 @@
+#navhome{
+    color: antiquewhite !important;
+}
+.projN{
+    font-size: 1.5em;
+    color: darkred;
+}
+.projp{
+    padding: 5px;
+}
+.projT{
+    font-size: 12px;
+    color: blueviolet;
+}
+#displayP{
+    display: flex;
+    justify-content: space-evenly;
+}
+#displayP div:hover, #displayP div:hover span.projN{
+    cursor: pointer;
+    color: red;
+}
+.x{
+    font-size: 5vw;
+    color: white;
+    background-color: rosybrown;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+@media only screen and (max-width: 800px){
+    #displayP{
+        flex-direction: column;
+    }
+    #displayP div{
+        display: flex;
+    }
+    .x{
+        font-size: 50px;
+    }
+}

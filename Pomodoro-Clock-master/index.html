@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A single page application featuring a fully functional pomodoro timer">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<title>Pomodoro Timer | Jason Durant</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header class="content-center">
+		<h1>Pomodoro Productivity Timer</h1>
+	</header>
+	<section class="container content-center">
+		<div class="half-width-m breaks-container">
+				<div id="break-container" class="half-width-m break-container">
+					<p>Break Min</p>
+					<div>
+						<span class="subtract-time">-</span>
+						<span id="break-time">5</span>
+						<span class="add-time">+</span>
+					</div>
+				</div><!--remove space
+				--><div id="work-container" class="half-width-m work-container">
+					<p>Work Min</p>
+					<div>
+						<span class="subtract-time">-</span>
+						<span id="work-time">25</span>
+						<span class="add-time">+</span>
+					</div>
+				</div>
+		</div>
+	</section>
+	<section class="content-center">
+		<div class="timer-container">
+			<div class="timer-inner-circle">
+					<h2 id="timer-title">Pomodoro Session</h2>
+					<div id="timer-clock"  class="timer-clock">25</div>
+					<button id="engage-button" class="start">Start</button>
+					<button id="reset-button" class="reset">Reset</button>
+				<!-- absolute -->
+				<div class="timer-filler timer-filler-work">
+					<div class="gradient-animation"></div>
+				</div>
+			</div>
+		</div>
+		<audio id="timer-bell" src="workbell.mp3" type="audio/mpeg">
+		</audio>
+	</section>
+	<footer class="container content-center">
+		<ul>
+			<li><a href="https://www.linkedin.com/in/durantjason"><i class="fa fa-linkedin-square" title="LinkedIn profile link"></i>
+LinkedIn</a></li>
+			<li><a href="https://twitter.com/JasonHDurant" title="Twitter profile link"><i class="fa fa-twitter-square"></i>Twitter</a></li>
+			<li><a href="https://github.com/jaydurant" title="Github profile link"><i class="fa fa-github"></i>Github</a></li>
+		</ul>
+	</footer>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>
+

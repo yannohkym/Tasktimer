@@ -1,0 +1,121 @@
+#teams{
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "name projects" "members projects";
+}
+#teamName{
+    grid-area: name;
+}
+#members{
+    grid-area: members;
+    padding: 5vw 10px;
+    text-align: center;
+}
+#projects{
+    grid-area: projects;
+}
+#navteam{
+    color: antiquewhite !important;
+}
+.teamN{
+    font-size: 2.5em;
+    color: darkred;
+    font-weight: bold;
+}
+.teamDesc{
+    color: blueviolet;
+    font-size: 1em;
+    font-family: serif;
+}
+.teamMem{
+    color: gray;
+}
+.trash svg:hover{
+    color: red;
+}
+.trash svg{
+    cursor: pointer;
+}
+
+.Amem:hover, .Amem:hover svg{
+    color: green;
+    cursor: pointer;
+}
+.sub{
+    eight: 30px;
+    width: 50%;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: 10px auto;
+    padding: 0px;
+}
+.error{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+    margin: 0;
+    color: red;
+    text-align: left;
+    display: none;
+}
+
+.sub:hover{
+    color: white;
+}
+.sub:active{
+    background-color: limegreen;
+}
+#displayP{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.projDis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#displayP div:hover, #displayP div:hover span.projN{
+    cursor: pointer;
+    color: red;
+}
+.projN{
+    font-size: 1.5em;
+    color: darkred;
+}
+.projp{
+    padding: 5px;
+}
+.x{
+    font-size: 5vw;
+    color: white;
+    background-color: rosybrown;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.label{
+    color: darkred;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 800px){
+    #teams{
+        grid-template-areas: "name name" "members projects";
+    }
+    .x{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .teamMem{
+        font-size: 12px;
+    }
+    .label{
+        font-size: 1.2em;
+    }
+}

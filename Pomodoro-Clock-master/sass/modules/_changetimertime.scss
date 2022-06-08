@@ -1,0 +1,22 @@
+
+
+.breaks-container{
+	padding-top:3%;
+	cursor:pointer;
+}
+
+.break-container,.work-container {
+	@include rem('font-size',28);
+}
+
+.subtract-time,.add-time{
+	padding: 2px 5px;
+}
+
+@include breakpoint($sassySmall){
+	.break-container, .work-container{
+		display:block;
+		margin: 0 auto;
+		border-top: black solid 1px;
+	}
+}

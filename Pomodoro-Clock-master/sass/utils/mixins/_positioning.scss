@@ -1,0 +1,17 @@
+// ----------------------------------------------------------------------
+
+  // Positioning of elements
+
+// ----------------------------------------------------------------------
+
+@mixin relative(){
+	position:relative;
+}
+
+@mixin absolute(){
+	position:absolute;
+}
+
+@mixin sticky(){
+	position:sticky;
+}

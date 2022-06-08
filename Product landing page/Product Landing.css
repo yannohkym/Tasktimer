@@ -1,0 +1,349 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#div{
+   position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: snow;
+    z-index: 2;
+}
+#int{
+    font-weight: normal;
+    font-size: medium;
+    margin-top: 0;
+}
+#nav-bar{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    top: 70px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+#eazzy{
+    height: 500px;
+    margin-top: 100px;
+    background-image: url("convenience.png");
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+#eazzy div{
+    float: left;
+    width: 60%;
+    margin-top: 100px;
+}
+.app{
+    position: relative;
+    font-size: 2.5em;
+    top: 25%;
+    margin:auto;
+    color: brown;
+    z-index: 1;
+}
+#features{
+    padding-top: 60px;
+}
+.intro{
+    background-color: #F4AB7A;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: url("phone-app.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.intro h1{
+    font-size: 2.5em;
+    color: brown;
+    margin-left: 40%;
+    padding-top: 100px;
+}
+.intro p{
+    font-size: 25px;
+    width: 50%;
+    margin-top: -20px;
+    margin-left: 45%;
+    margin-right: 5%;
+
+}
+#transfer{
+    background-color: honeydew;
+    background-image: url("download.png");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: right;
+    background-size: auto 100%;
+    margin-top: -40px;
+    text-align: center;
+}
+#transfer h1{
+    font-size: 2.5em;
+    color: brown;
+    padding-top: 80px;
+    width: 55%;
+}
+#transfer p{
+    font-size: 25px;
+    width: 50%;
+    margin-left: 2%;
+}
+#bills{
+    background-color: #F4AB7A;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: -40px;
+    background-image: url("pay.png");
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+#bills h1{
+    font-size: 2.5em;
+    color: brown;
+    margin-left: 45%;
+    padding-top: 90px;
+}
+#bills p{
+    font-size: 25px;
+    width: 50%;
+    margin-top: -20px;
+    margin-left: 48%;
+    margin-right: 2%;
+}
+#account{
+    text-align: center;
+    background-color: honeydew;
+    background-image: url("instant.png");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: right;
+    margin-top: -40px;
+}
+#account h1{
+    font-size: 2.5em;
+    color: brown;
+    padding-top: 90px;
+    width: 55%;
+}
+#account p{
+    font-size: 25px;
+    width: 55%;
+    margin-left: 2%;
+    margin-top: -15px;
+}
+#secure{
+    background-color: brown;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: -40px;
+    background-image: url("secure.png");
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+#secure h1{
+    font-size: 2.5em;
+    color: white;
+    margin-left: 45%;
+    padding-top: 90px;
+}
+#secure p{
+    font-size: 25px;
+    width: 50%;
+    margin-top: -20px;
+    margin-left: 48%;
+    margin-right: 2%;
+}
+#vid{
+    margin: auto;
+    text-align: center;
+    background-color: honeydew;
+    width: 100%;
+}
+#vid h1{
+    font-size: 2.5em;
+    color: brown;
+    margin: auto;
+    padding-top: 100px;
+}
+#download img{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+#download h1{
+    font-size: 3em;
+    color: brown;
+    text-align: center;
+    margin-bottom: 0;
+}
+#fom{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 50px 0 0 0;
+    padding: 0;
+    background-color: #221f1f;
+    background-size: cover;
+}
+#fom label{
+    font-size: 1.5em;
+    color: white;
+
+}
+#fom p{
+    margin: 0;
+    padding: 0;
+}
+#fom input{
+    width: 400px;
+    height: 30px;
+    background-color: ghostwhite;
+    border: solid 1px brown;
+    border-radius: 0.5em;
+    padding: 0;
+}
+#submit{
+    width: 200px !important;
+    background-color: snow !important;
+}
+
+
+@media screen and (max-width: 800px),
+handheld and (max-width: 800px),
+screen and (max-device-width: 800px){
+    #div{
+       text-align: center;
+    }
+    #nav-bar{
+        float: none;
+        margin: auto;
+        top: auto;
+    }
+    #eazzy{
+        text-align: center;
+        background-position: bottom;
+        background-size: 370px;
+
+    }
+    #eazzy div{
+        float: unset;
+        width: auto;
+        margin-top: 150px;
+    }
+    .app{
+    top: 10%;
+    }
+    .intro{
+        text-align: center;
+        background-position: bottom;
+        height: 600px;
+    }
+    .intro h1{
+        font-size: 2.5em;
+        color: brown;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 18px;
+    }
+    .intro p{
+        font-size: 25px;
+        width: 70%;
+        float: unset;
+        margin-left: 15%;
+        text-align: center;
+    }
+    #transfer{
+        text-align: center;
+        background-image: unset;
+    }
+    #transfer h1{
+        font-size: 2.5em;
+        color: brown;
+        width: unset;
+        padding-top: 50px;
+    }
+    #transfer p{
+        font-size: 25px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    #bills{
+        text-align: center;
+        background-position: bottom;
+        height: 650px;
+    }
+    #bills h1{
+        font-size: 2.5em;
+        color: brown;
+        margin-left: unset;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    #bills p{
+        font-size: 25px;
+        width: 70%;
+        float: unset;
+        margin-left: 15%;
+        text-align: center;
+    }
+    #account{
+        text-align: center;
+        background-position: bottom;
+        height: 650px;
+    }
+    #account h1{
+        font-size: 2.5em;
+        color: brown;
+        width: unset;
+        margin-left: unset;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    #account p{
+        font-size: 25px;
+        width: 70%;
+        margin-left: 15%;
+    }
+    #secure{
+        text-align: center;
+        background-position: bottom;
+        height: 650px;
+    }
+    #secure h1{
+        font-size: 2.5em;
+        margin-left: unset;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    #secure p{
+        font-size: 25px;
+        width: 70%;
+        float: unset;
+        margin-left: 15%;
+        text-align: center;
+    }
+}

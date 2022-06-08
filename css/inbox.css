@@ -1,0 +1,130 @@
+#itoggle{
+    padding: 5px;
+}
+.inow{
+    float: right;
+    text-align: end
+}
+#navbox{
+    color: antiquewhite !important;
+}
+#inbox{
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "preview view";
+    max-height: 100vh;
+}
+#preview::-webkit-scrollbar {
+    display: block;
+}
+#main{
+    padding: 5px 0 5px 5px !important;
+}
+#preview{
+    grid-area: preview;
+    border-right: ridge;
+    height: 88vh;
+    overflow-y: auto;
+}
+#view{
+    grid-area: view;
+    background-color: ghostwhite;
+}
+#iview1{
+    display: none;
+}
+#itime{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.iadd{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    z-index: 1;
+    background-color: ghostwhite !important;
+
+}
+.nothing{
+    position: relative;
+    top: 40%;
+    color: gray;
+    text-align: center;
+}
+.iadd div{
+    padding: 5px;
+}
+.iadd .clse{
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+.notification{
+    font-size: 1em;
+    background-color: white;
+    padding: 10px;
+    border-bottom: ridge;
+    cursor: pointer;
+}
+.iname{
+    color: darkred;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.notification:hover .iname{
+    color: red !important;
+}
+.imessage{
+    color: slateblue
+}
+.iteam{
+    color: slateblue;
+    font-weight: lighter
+}
+#iName{
+    font-size: 2em;
+    color: darkred;
+}
+.label{
+    font-size: 1.5em;
+    color: darkslategrey;
+}
+.idiv{
+    padding: 5px;
+}
+.icomplete{
+    position: relative;
+    top: -10px;
+    left: -10px;
+    border: none;
+    color: gray;
+    background-color: white;
+    border-radius: 10px;
+}
+#icomplete{
+    cursor: default;
+}
+#icheck:hover, #icheck:hover svg{
+    color: green !important;
+    background-color: white !important;
+}
+@media only screen and (max-width: 500px){
+    .notification{
+        font-size: 12px;
+    }
+    #icomplete span{
+        display: none;
+    }
+    #icomplete{
+        color: green !important;
+        font-size: 25px;
+        background-color: inherit !important;
+    }
+}

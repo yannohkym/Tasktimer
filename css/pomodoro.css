@@ -1,0 +1,147 @@
+#navpom{
+    color: antiquewhite !important;
+}
+#pomodoroN{
+    display: flex;
+    justify-content: space-between;
+    color: darkred;
+    align-items: baseline;
+}
+#pomodoroN p{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+#config{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#config:active{
+    color: red;
+}
+#pomform{
+    position: absolute;
+    font-size: 12px;
+    right: 0px;
+    width: 30vw;
+    background-color: white;
+    border: ridge;
+    display: none;
+    z-index: 1;
+}
+.pominput{
+    width: 30%;
+    display: unset;
+    text-align: center;
+    padding: 0;
+}
+#pomform label{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#pomrem{
+    text-align: center;
+    font-size: 1.5em;
+}
+#Thepomodoro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#Thepomodoro svg.fa-apple-alt{
+    font-size: 15em;
+    position: relative;
+    top: 30px;
+    color: darkred;
+}
+.button{
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 25vw;
+    height: 40px;
+}
+#span{
+    padding: 15px;
+    position: relative;
+    top: 60px;
+ }
+
+#button:active{
+    background-color: darkgreen;
+}
+
+#app{
+    position: absolute;
+}
+
+.base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+    color: orange;
+}
+
+.base-timer__path-remaining.red {
+    color: red;
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+}
+#subtract, #add{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#subtract:hover{
+    color: red;
+}
+#add:hover{
+    color: green;
+}
+#message{
+     text-align: center;
+     font-size: 2em;
+     color: darkred;
+ }

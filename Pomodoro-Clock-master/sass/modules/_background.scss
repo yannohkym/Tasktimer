@@ -1,0 +1,11 @@
+
+body{
+		background-color: rgba(6, 6, 6, 0.58);
+		color: white;
+		@include single-text-shadow(3px, 2px, 1px, #000);
+}
+
+
+
+
+

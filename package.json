@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.0.0-beta3",
+    "bootstrap4-toggle": "^3.6.1",
+    "easytimer.js": "^4.3.4",
+    "jquery": "^3.6.0",
+    "maxlength-contenteditable": "^1.0.1",
+    "moment": "^2.29.1",
+    "multiple-select": "^1.5.2",
+    "mysql": "^2.18.1"
+  }
+}

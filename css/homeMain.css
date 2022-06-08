@@ -1,0 +1,390 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "header header" "navbar body";
+
+}
+#head{
+    grid-area: header;
+    color: darkred;
+    transition: margin-right .5S;
+}
+#head h1{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+    z-index: 1;
+}
+
+#id_icon{
+    position: relative;
+    margin: 0.5% 1% 0 0;
+    float: right;
+    font-size: 24px;
+}
+.icon{
+    cursor: pointer;
+}
+#dropdown{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    padding: 5px;
+}
+.closebtn{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white !important;
+    cursor: pointer;
+}
+#profile{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+#profile img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+#profile p{
+    font-size: 1.5em;
+}
+.span{
+    display:none;
+    background-color: darkred;
+    width: 30px;
+    height: 5px;
+    margin: 0 0 2px 0;
+    border-radius: 2em;
+}
+#navbar{
+    grid-area: navbar;
+    background-color: rgb(37 31 31);
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#navbar ul{
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
+}
+#navbar ul li{
+    font-size: 120%;
+    height: 5%;
+    border-bottom: 1px groove gray;
+}
+#navbar ul li a:hover{
+    color: white;
+    transform: scale(1.1);
+}
+#navbar ul li a{
+    color: gray;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+    padding: 5%;
+}
+#main{
+    grid-area: body;
+    padding: 5%;
+    margin: 50px auto auto auto;
+    width: 80vw;
+}
+.add{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 50%;
+    background-color: floralwhite;
+    z-index: 1;
+}
+
+.add div{
+    padding: 5px;
+}
+.submit, #vedit{
+    height: 30px;
+    width: 30%;
+    min-width: fit-content;
+    background-color: darkred;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: auto;
+    padding: 0;
+    float: right;
+}
+#vAssign{
+    display: flex;
+    flex-direction: column;
+}
+.submit:hover{
+    background-color: rgb(90 0 0);
+}
+.submit:active{
+    background-color: rgb(193 0 0);
+    color: gray;
+}
+.vedit{
+    background-color: darkcyan !important;
+    display: none;
+}
+.vedit:hover{
+    background-color: deepskyblue !important;
+}
+button.vedit:active{
+    background-color: darkblue !important;
+}
+.add .clse{
+    position: relative;
+    float: right;
+    top: -15px;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+#view1 select,#view1 input,#view1 textarea{
+    border: none;
+}
+#view1{
+    background-color: palegoldenrod;
+}
+#complete{
+    position: relative;
+    top: -10px;
+    left: -10px;
+    border: none;
+    color: gray;
+    background-color: white;
+    border-radius: 10px;
+}
+#complete:hover{
+    color: green !important;
+    background-color: white !important;
+}
+.vsection{
+    margin-top: 5%;
+}
+.ms-drop ul>li.multiple{
+    width: 100% !important;
+}
+.ms-choice>span{
+    position: unset !important;
+}
+.toast{
+    position: fixed;
+    z-index: 3;
+    bottom: 5px;
+    left: 10px;
+    background-color: aliceblue !important;
+}
+.close{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+#check{
+    font-size: 20px;
+}
+hr{
+    margin: 0 0 10px 0;
+}
+p{
+    margin: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkred;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+.thead{
+    background-color: lightgray;
+}
+#table{
+    overflow-y: auto;
+    max-height: 50vh;
+}
+.check{
+    cursor: pointer;
+}
+.check svg:hover{
+    color: green !important;
+}
+.taskName{
+    cursor: pointer;
+}
+.taskName:hover{
+    color: blue;
+}
+.table td{
+    padding: 0 5px 0 5px;
+}
+.table{
+    table-layout: auto;
+    width: 100%;
+    font-size: 1em;
+    margin: 0;
+}
+.vCheck{
+    width: 7%;
+}
+.vdet{
+    width: 16%;
+}
+.vpom{
+    width: 22%;
+}
+.vdue{
+    width: 20%;
+}
+.vpro{
+    width: 26%;
+}
+.vstat{
+    width: 12%;
+}
+.mytask span{
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: bold;
+    display: none;
+    background-color: darkred;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+#bell{
+    display: none;
+    position: relative;
+    top: -10px;
+    right: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+.ilabel{
+    color: darkred;
+    cursor: pointer;
+}
+.ilabel:active{
+    color: red;
+}
+#teamlist{
+    color: white;
+    text-align: center;
+    height: 20vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(53 43 43);
+}
+#teamlist::-webkit-scrollbar{
+    display: block;
+}
+#teamlist p:hover{
+    color: white;
+    transform: scale(1.1);
+}
+#teamlist p{
+    cursor: pointer;
+    border-bottom: outset;
+    color: slategray;
+}
+#teamlist p:active{
+    color: antiquewhite;
+}
+#navteam{
+    color: gray;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+    padding: 5%;
+    cursor: pointer;
+}
+#navteam:hover{
+    color: white;
+    transform: scale(1.1);
+}
+#startask{
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    min-width: 10vw;
+}
+#startask:active{
+    background-color: darkgreen;
+}
+.vstat{
+    padding-top: 7px !important;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        grid-template-columns: 0fr 1fr;
+    }
+    #navbar{
+        width: 0;
+    }
+    .span{
+        display: block;
+    }
+    #navbar ul li a{
+        font-size: medium;
+    }
+    #id_icon{
+        font-size: 16px;
+    }
+    .add{
+        width: 90%;
+    }
+    #tCategory{
+        font-size: 12px;
+    }
+    .table{
+        font-size: 12px;
+    }
+    #main{
+       width: -webkit-fill-available;
+    }
+}

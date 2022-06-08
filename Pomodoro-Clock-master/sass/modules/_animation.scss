@@ -1,0 +1,20 @@
+//Contains animation classes which interact with html elements---------------------------
+
+.visible-hidden{
+	@include animation( 0.5s linear 0s 1 normal forwards running visible-hidden)
+}
+
+@include keyframes(visible-hidden){
+	from{opacity:1.0;}
+	to{opacity:0.0;}
+}
+
+.visible-shown{
+	@include animation( 0.5s linear 0s 1 normal forwards running visible-shown)
+}
+
+@include keyframes(visible-shown){
+	from{opacity:0.0;}
+	to{opacity:1.0;}
+}
+

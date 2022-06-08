@@ -1,0 +1,28 @@
+#tCategory{
+    position: relative;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+}
+#tCategory:hover{
+    background-color: darkred;
+}
+#navtask{
+    color: antiquewhite !important;
+}
+#tCategory option{
+    background-color: white;
+    color: black;
+}
+#section::-webkit-scrollbar{
+    display: block
+}
+#section{
+    overflow-y: auto;
+    max-height: 80vh;
+}

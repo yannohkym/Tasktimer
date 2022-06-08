@@ -1,0 +1,107 @@
+#navpro{
+    color: antiquewhite !important;
+}
+.projN{
+    font-size: 2.5em;
+    color: darkred;
+    font-weight: bold;
+}
+.projT{
+    color: blueviolet;
+    font-size: 1em;
+    font-family: serif;
+}
+#tCategory{
+    position: relative;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+}
+#tCategory:hover{
+    background-color: darkred;
+}
+.divmem{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkred;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    min-height: 30vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#section::-webkit-scrollbar{
+    display: block;
+}
+#section{
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.divmem p{
+    padding: 5px;
+}
+.divmem p svg:hover{
+    color: indianred;
+    cursor: pointer;
+}
+.divmem p svg:active{
+    color: red;
+    cursor: pointer;
+}
+.Amem:hover, .Amem:hover svg{
+    color: green;
+    cursor: pointer;
+}
+.Acat{
+    color: darkred;
+}
+.Acat:hover, .Acat:hover svg{
+    color: green;
+    cursor: pointer;
+}
+#tCategory option{
+    background-color: white;
+    color: black;
+}
+#pmem{
+    position: relative;
+    top: 20px;
+    height: fit-content;
+    border: none;
+    border-radius: 10px;
+    background-color: darkred;
+    color: white;
+}
+#pmem:active{
+    background-color: red;
+}
+#projo{
+    display: flex;
+    justify-content: space-between;
+}
+.sub{
+    eight: 30px;
+    width: 50%;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: 10px auto;
+    padding: 0px;
+}
+.sub:hover{
+    color: white;
+}
+.sub:active{
+    background-color: limegreen;
+}

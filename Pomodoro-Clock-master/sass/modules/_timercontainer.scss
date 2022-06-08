@@ -1,0 +1,62 @@
+.timer-container{
+	height:400px;
+	width:400px;
+	padding: 3px;
+	@include margin-auto();
+	@include roundedCorners(250);
+	border: 2px solid #0BFF2B;
+	@include single-transition(all, .5s, ease-in, 0s);
+
+	&:hover{
+		@include box-shadow(0px, 0px, 3px, 5px, #0BFF2B);
+	}
+
+}
+
+
+@include breakpoint($sassySmall){
+	.timer-container{
+		transform: scale(0.70);
+		margin: 0 -3%;
+	}
+	
+}
+
+
+
+.timer-inner-circle{
+	@include relative();
+	overflow:hidden;
+	border-radius:200px;
+	height:100%;
+
+	h2{
+		margin-top:30%;
+		@include rem('font-size', 50);
+	}
+
+}
+
+.timer-filler{
+	@include absolute();
+	height:110%;
+	width:100%;
+	top:100%;
+	z-index:-100;
+	overflow:hidden;
+}
+
+
+.timer-filler-work{
+	background-color:#1CB530;
+}
+
+.timer-filler-break{
+	background-color: #D87D2C;
+}
+
+
+.timer-clock{
+	margin-top:10%;
+	@include rem("font-size",70);
+}

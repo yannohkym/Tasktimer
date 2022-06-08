@@ -1,0 +1,128 @@
+//container class
+.container{
+	width: $full-width;
+}
+//column classes
+
+.half-width-s{
+	@include inline-block();
+	width: $full-width / 2;
+}
+
+.three-quarters-width-s{
+	@include inline-block();
+	width: $full-width / 1.3;
+}
+
+.full-width-s{
+	@include inline-block();
+	width: $full-width;
+}
+
+.half-width-m{
+	@include inline-block();
+	width: $full-width / 2;
+}
+
+.three-quarters-width-m{
+	@include inline-block();
+	width: $full-width / 1.3;
+}
+
+.full-width-m{
+	@include inline-block();
+	width: $full-width;
+}
+
+.half-width-l{
+	@include inline-block();
+	width: $full-width / 2;
+}
+
+.three-quarters-width-l{
+	@include inline-block();
+	width: $full-width / 1.3;
+}
+
+.full-width-l{
+	@include inline-block();
+	width: $full-width;
+}
+
+//media queries -------------------------
+
+@include breakpoint($sassySmall){
+	.half-width-s{
+		@include inline-block();
+		width: $full-width / 2;
+	}
+	
+
+.three-quarters-width-s{
+	@include inline-block();
+	width: $full-width / 1.3;
+	}
+
+.full-width-s{
+	@include inline-block();
+	width: $full-width;
+	}	
+}
+
+@include betweenbreakpoints($sassySmall,$sassyMed){
+	.half-width-m{
+		@include inline-block();
+		width: $full-width / 2;
+	}
+
+	.three-quarters-width-m{
+		@include inline-block();
+		width: $full-width / 1.3;
+	}
+
+	.full-width-m{
+		@include inline-block();
+		width: $full-width;
+	}
+}
+
+@include min-breakpoint($sassyMed){
+	.half-width-l{
+		@include inline-block();
+		width: $full-width / 2;
+	}
+
+	.three-quarters-width-l{
+		@include inline-block();
+		width: $full-width / 1.3;
+	}
+
+	.full-width-l{
+		@include inline-block();
+		width: $full-width;
+	}
+	
+}
+
+
+
+//align content ---------------------------------
+
+.content-center{
+	@include align(center);
+}
+
+.content-left{
+	@include align(left);
+}
+
+.content-right{
+	@include align(right);
+}
+
+.content-justify{
+	@include align(justify);
+}
+
+
+
