@@ -27,9 +27,9 @@ try {
 if(isset($_POST['pomodoro'])){
     if (isset($_POST['config'])){
         $pom = <<<SQL
-        SELECT  p.*, u.Pomodoro
-        FROM users u
-        INNER JOIN pomodoro p on u.Pomodoro = p.id
+        SELECT  p.*
+        FROM pomodoro p 
+        INNER JOIN users u on p.user_id = u.id
         WHERE u.id = :id
     SQL;
         $pomodoro = $db->prepare($pom);

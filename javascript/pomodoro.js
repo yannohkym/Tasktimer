@@ -67,15 +67,16 @@ $(document).ready(()=>{
         url: './ajax/taskDetails.php',
         data: {pomodoro : 1, config : 1},
         success: function (response) {
-            $('#work').val(response[0],['duration'])
-            $('#short').val(response[0],['short_break']);
-            $('#long').val(response[0],['long']);
-            $('#interval').val(response[0],['intervals']);
+            console.log(response);
+            $('#work').val(response[0]['duration'])
+            $('#short').val(response[0]['short_break']);
+            $('#long').val(response[0]['long_break']);
+            $('#interval').val(response[0]['intervals']);
             update(response[0]['Pomodoro']);
         },
         dataType: 'json',
         error: () => {
-            console.log(error)
+            console.error();
         }
     })
 

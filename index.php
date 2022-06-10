@@ -61,6 +61,6 @@ if(isset($_GET['logout'])){
 </div>
 </body>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-<script scr="./node_modules/jquery-validation/jquery.validate.min.js"></script>
+<script src="./node_modules/jquery-validation/jquery.validate.min.js"></script>
 <script src="./javascript/signUp.js"></script>
 </html>

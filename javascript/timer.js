@@ -9,7 +9,7 @@ $(document).ready(()=>{
         },
         dataType: 'json',
         error: () => {
-            console.log(error)
+            console.error();
         }
     })
 

@@ -2,7 +2,7 @@
 
 $dsn = 'mysql:host=127.0.0.1;dbname=task';
 $user = 'root';
-$password = 'kym123';
+$password = 'DB@local2022';
 
 try{
     $db = new PDO(
